@@ -35,6 +35,8 @@
     transition: background .3s ease-in-out;
 }
 
+/*------Navbar-------*/
+
 .navbar input[type="checkbox"],
 .navbar .hamburger-lines {
     display: none;
@@ -87,6 +89,8 @@
     margin-bottom: 0.5rem;
 }
 
+/*------Home-------*/
+
 .showcase-area {
     height: 50vh;
     background: linear-gradient(
@@ -111,4 +115,66 @@
 .main-title {
     text-transform: uppercase;
     margin-top: 1.5em;
+}
+
+/*-------About---------*/
+
+#about {
+    padding: 50px 0;
+    background: #f5f5f7;
+}
+
+.about-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#about h2 {
+    font-size: 2.3rem;
+}
+
+#about p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+#about .small {
+    font-size: 1.2rem;
+    color: #666;
+    font-weight: 600;
+}
+
+.about-img {
+    padding: 30px;
+    transform: translateX(150%);
+    animation: about-img-animation 1s ease-in-out forwards;
+}
+
+@keyframes about-img-animation {
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.about-text {
+    flex: 1 1 400px;
+    padding: 30px;
+    margin: auto;
+    transform: translate(-150%);
+    animation: about-text-animation 1s ease-in-out forwards;
+}
+
+@keyframes about-text-animation {
+    100% {
+        transform: translate(0);
+    }
+}
+
+.about-img img {
+    display: block;
+    height: 400px;
+    max-width: 100%;
+    margin: auto;
+    object-fit: cover;
+    object-position: right;
 }
